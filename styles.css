@@ -40,7 +40,7 @@ h3 {
   font-style: normal;
   font-size: 18px;
   color: black;
-  padding: 0px 0px 15px 40px;
+  padding: 0px 0px 15px 25px;
 }
 
 #sidepanel {
@@ -54,7 +54,8 @@ p {
 
   font-size: 16px;
   color: black;
-  padding-left: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 40px;
 }
 
