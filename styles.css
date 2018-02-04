@@ -1,0 +1,397 @@
+
+body {
+  background-color: #e7fdf9;
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+}
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+
+.main {
+  margin-top: 290px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 80px;
+  margin-bottom: 0px;
+  /* margin-left: auto;
+  margin-right: auto; */ for adding dynamic side panels later; they should asjust depending on window width;
+  background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+h2 {
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 28px;
+  color: black;
+  padding: 0px 0px 30px 0px;
+}
+
+h3 {
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  color: black;
+  padding: 0px 0px 15px 40px;
+}
+
+#sidepanel {
+  background-color: #e7fdf9;
+}
+
+p {
+  text-align: justify;
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+
+  font-size: 16px;
+  color: black;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+video {
+  margin-bottom: 30px;
+}
+.pencilbrush-image {
+    margin-bottom: 30px;
+    padding: 0 7%;
+    align-items: center;
+}
+
+#pencilbrush-label {
+  text-align: left;
+  margin-bottom: 30px;
+  max-width: auto;
+  margin-top: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.image-caption {
+  text-align: left;
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: italic;
+
+  font-size: 14px;
+  font-weight: lighter;
+  color: black;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  margin-top: 15px;
+}
+
+.cover-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.cover-text {
+transition: .5s ease;
+ opacity: 0;
+ position: absolute;
+ top: 50%;
+ left: 25%;
+ transform: translate(-25%, -50%);
+ -ms-transform: translate(-25%, -50%);
+ text-align: left
+  transition: .5s ease;
+  background-color: none;
+  color: darkslategray;
+  font-size: 24px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.portfolio-cover {
+  margin-bottom: 30px;
+}
+
+.portfolio-cover:hover img {
+  opacity: 0.3;
+}
+
+.portfolio-cover:hover .cover-text {
+  opacity: 1;
+}
+
+#portrait {
+  height: auto;
+  max-height: 250px;
+  width: auto;
+  max-width: 100%;
+}
+
+.repeat_tile {
+  background-image: url(images/repeat_tile.gif);
+  background-repeat: repeat-x repeat-y;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 100%
+}
+
+#repeat_tile {
+  padding: 100%;
+  margin-bottom: auto;
+  overflow: hidden;
+}
+
+li {
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  color: black;
+  list-style-image: url(images/bullet.png);
+
+}
+
+.centered {
+  text-align: center;
+  margin: auto;
+}
+
+
+a:link {
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  color: slategray;
+  text-decoration: none;
+}
+
+a:visited {
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  color: slategray;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  color: darkslategray;
+  text-decoration: none;
+
+}
+
+a:active {
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  color: darkslategray;
+  text-decoration: underline;
+}
+
+.top-row-fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+h1 {
+    font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 48px;
+    color: darkslategray;
+    background-image: url(images/background_pale.gif);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    border-style:none;
+    padding: 150px 0px 40px 40px;
+    margin: 0px;
+  }
+
+/* ------------------------------------------------------------------------------ */
+
+.dropbtn {
+  background-color: #C8FBF1; //color of the button
+  color: slategray;
+  padding: 10px 20px;
+  margin: 0px 10px;
+  font-size: 18px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbtn:hover {
+  background-color: #a0f8e5;
+  color: darkslategray;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: inherit;
+  background-color: #ecf7f9; //background of the panel that drops down; lightest version of powederblue
+  max-width: 200px;
+  z-index: 1;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  color: slategray; // the text-color of the items in the dropdown list
+  text-decoration: none;
+  padding: 10px 10px 10px 10px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #d8eff3; //background-color of the drop-down panel on hover
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #a0f8e5; //darker color of button on hover
+}
+
+/* --------------------------------------------------------------------------- */
+
+.navbar {
+  position: absolute;
+  display: inline-block;
+  background-color: #C8FBF1;
+  width: 100%;
+  height: 55px;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.navbtn {
+  position: relative;
+  background-color: #C8FBF1; //color of the button
+  color: slategray;
+  padding: 15px 40px;
+  margin: 0px;
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.navbtn:hover {
+  background-color: #a0f8e5;
+  color: darkslategray;
+}
+
+.navbtn:active {
+  background-color: #71f4d8;
+  color: darkslategray;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 781px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  .navbar.responsive {position: inherit;}
+  .navbar.responsive .icon {
+    position: inherit;
+    display: inline-block;
+    text-align: center;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* ----------------------------------------------------------------------------- */
+.bottom-row-fixed {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+.bottom-navbar {
+  position: relative;
+  display: inline-block;
+  background-color: #C8FBF1;
+  width: 100%;
+  height: inherit;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+.bottom-navbtn {
+  position: relative;
+  background-color: #C8FBF1; //color of the button
+  color: slategray;
+  padding: 15px 40px;
+  margin: 0px;
+  font-family: "proxima-nova", "Cabin", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.bottom-navbtn:hover {
+  background-color: #a0f8e5;
+  color: darkslategray;
+}
+
+.bottom-navbtn:active {
+  background-color: #71f4d8;
+  color: darkslategray;
+}
