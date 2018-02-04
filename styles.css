@@ -159,6 +159,7 @@ li {
   font-size: 18px;
   color: black;
   list-style-image: url(images/bullet.png);
+  list-style-position: inside;
 
 }
 
